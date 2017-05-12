@@ -1,3 +1,20 @@
 export class Hike {
-  constructor(public name: string, public location: string, public type: string, public difficulty: number, public image: string, public shortDescription: string, public description: string, public notes: string, public recommendation: string, public website: string) {}
+  constructor(public hikeName: string,
+              public author: string,
+              public state: string,
+              public coordinates: string,
+              public type: string,
+              public difficulty: string,
+              public distance: number,
+              public season: string,
+              public image: string,
+              public shortDescription: string,
+              public description: string,
+              public notes: string,
+              public recommendation: string,
+              public familyFriendly: string,
+              public dogFriendly: string,
+              public parking: string,
+              public email: string,
+              ) {}
 }
