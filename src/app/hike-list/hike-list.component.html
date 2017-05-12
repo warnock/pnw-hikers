@@ -1,3 +1,18 @@
 <p>
   hike-list works!
 </p>
+
+<div class="card horizontal" *ngFor="let hike of hikes | async">
+      <div class="card-image">
+        <img src="{{hike.image}}">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>{{hike.hikeName}}</h4>
+          <p>{{hike.description}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
