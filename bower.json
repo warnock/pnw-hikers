@@ -1,0 +1,17 @@
+{
+  "name": "oregon-hikes",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Megan Warnock <megandwarnock@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/warnock/pnw-hikes",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

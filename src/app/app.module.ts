@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HikeListComponent } from './hike-list/hike-list.component';
 import { NewHikeComponent } from './new-hike/new-hike.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NewHikeComponent } from './new-hike/new-hike.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterializeModule
+    MaterializeModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
