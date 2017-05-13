@@ -9,10 +9,10 @@
       <div class="card-stacked">
         <div class="card-content">
           <h4>{{hike.hikeName}}</h4>
-          <p>{{hike.description}}</p>
+          <p>{{hike.shortDescription}}</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a (click)="goToDetailPage(hike)">See More!</a>
         </div>
       </div>
     </div>
