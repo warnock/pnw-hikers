@@ -1,1 +1,28 @@
 @import  "../node_modules/materialize-css/dist/css/materialize.css";
+
+.carousel .carousel-item {
+  width: 400px;
+}
+
+.carousel {
+  height: 300px;
+}
+
+.homeContent {
+  text-align: center;
+}
+
+body > app-root > nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+body {
+  margin-top: 85px;
+}
+
+.brand-logo {
+  margin-left: 10px;
+}
