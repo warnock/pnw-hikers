@@ -26,3 +26,16 @@ body {
 .brand-logo {
   margin-left: 10px;
 }
+
+.page-footer {
+  margin-top: 20px;
+  padding-top: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+form, .card {
+  margin-bottom: 60px;
+}
