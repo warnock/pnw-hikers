@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterializeModule } from "angular2-materialize";
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -32,7 +32,7 @@ export const firebaseConfig = {
     HikeListComponent,
     NewHikeComponent,
     HikeDetailComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -41,7 +41,8 @@ export const firebaseConfig = {
     MaterializeModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

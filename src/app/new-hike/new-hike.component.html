@@ -1,3 +1,107 @@
-<p>
-  new-hike works!
-</p>
+<h4>Add a new Hike!</h4>
+<form [formGroup]="hikeForm">
+  <div class="input-field">
+    <label for="hikeName">Name of Hike:</label>
+    <br>
+    <input id="hikeName" type="text" class="materialize-textarea" formControlName="hikeName">
+  </div>
+
+  <div class="input-field">
+    <label for="author">Hiker:</label>
+    <br>
+    <input type="text" class="validate" formControlName="author">
+  </div>
+
+  <div class="input-field">
+    <label>State:</label>
+    <br>
+    <input type="text" class="validate" formControlName="state">
+  </div>
+
+  <div class="input-field">
+    <label>Coordinates:</label>
+    <br>
+    <input class="validate" formControlName="coordinates">
+  </div>
+
+  <div class="input-field">
+    <label>Type Of Hike:</label>
+    <br>
+    <input class="validate" formControlName="type">
+  </div>
+
+  <div class="input-field">
+    <select materialize="material_select" [materializeSelectOptions]="type" formControlName="type">
+        <option value="" disabled selected>Choose your option</option>
+        <option *ngFor="let name of categories" [value]="name">{{name}}</option>
+    </select>
+  </div>
+
+  <div class="input-field">
+    <label>Miles of Hike:</label>
+    <br>
+    <input class="validate" type="number" formControlName="distance">
+  </div>
+
+  <div class="input-field">
+    <label>Season:</label>
+    <br>
+    <input class="validate" formControlName="season">
+  </div>
+
+  <div class="input-field">
+    <label>Image URL:</label>
+    <br>
+    <input class="validate" formControlName="image">
+  </div>
+
+  <div class="input-field">
+    <label>Short Description of hike:</label>
+    <br>
+    <input class="validate" formControlName="shortDescription">
+  </div>
+
+  <div class="input-field">
+    <label>Description of hike:</label>
+    <br>
+    <input class="validate" formControlName="description">
+  </div>
+
+  <div>
+    <label>Notes about hike:</label>
+    <br>
+    <input class="validate" formControlName="note">
+  </div>
+
+  <div class="input-field">
+    <label>Recommendations:</label>
+    <br>
+    <input class="validate" formControlName="recommendation">
+  </div>
+
+  <div class="input-field">
+    <label>Family Friendly:</label>
+    <br>
+    <input class="validate" formControlName="familyFriendly">
+  </div>
+
+  <div class="input-field">
+    <label>Dog Friendly:</label>
+    <br>
+    <input class="validate" formControlName="dogFriendly">
+  </div>
+
+  <div class="input-field">
+    <label>Parking:</label>
+    <br>
+    <input class="validate" formControlName="parking">
+  </div>
+
+  <div class="input-field">
+    <label>Email for people to contact you about the hike:</label>
+    <br>
+    <input class="validate" formControlName="email">
+  </div>
+
+  <button class="btn waves-effect waves-light" (click)="addNewHike()">Get Hiking!</button>
+</form>
