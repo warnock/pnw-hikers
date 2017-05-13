@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HikeListComponent } from './hike-list/hike-list.component';
 import { NewHikeComponent } from './new-hike/new-hike.component';
+import { HikeDetailComponent } from './hike-detail/hike-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'new-hike',
     component: NewHikeComponent
+  },
+  {
+    path: 'hikes/:id',
+    component: HikeDetailComponent
   }
 ];
 

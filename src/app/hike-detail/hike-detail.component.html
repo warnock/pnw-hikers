@@ -1,3 +1,17 @@
-<p>
-  hike-detail works!
-</p>
+
+<div>
+  <h3>{{(hikeToDisplay | async)?.hikeName}}</h3>
+  <h4>Posted by: {{(hikeToDisplay | async)?.author}}</h4>
+  <p>State: {{(hikeToDisplay | async)?.state}}</p>
+  <p>Coordinates: {{(hikeToDisplay | async)?.coordinates}}</p>
+  <p>Type of Hike: {{(hikeToDisplay | async)?.type}}</p>
+  <p>Difficulty Level: {{(hikeToDisplay | async)?.difficulty}}</p>
+  <p>Miles: {{(hikeToDisplay | async)?.distance}}</p>
+  <p>Season: {{(hikeToDisplay | async)?.season}}</p>
+  <p>Notes: {{(hikeToDisplay | async)?.notes}}</p>
+  <p>Recommendations: {{(hikeToDisplay | async)?.recommendation}}</p>
+  <p>Family Friendly: {{(hikeToDisplay | async)?.familyFriendly}}</p>
+  <p>Dog Friendly: {{(hikeToDisplay | async)?.dogFriendly}}</p>
+  <p>Parking: {{(hikeToDisplay | async)?.parking}}</p>
+  <p>Contact the Hiker: {{(hikeToDisplay | async)?.emial}}</p>
+</div>

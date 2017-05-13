@@ -20,7 +20,7 @@ export class HikeListComponent implements OnInit {
     this.hikes = this.hikeService.getHikes();
   }
 
-  gotToDetailPage(clickedHike) {
+  goToDetailPage(clickedHike) {
     this.router.navigate(['hikes', clickedHike.$key]);
   }
 
